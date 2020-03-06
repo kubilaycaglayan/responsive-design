@@ -30,6 +30,7 @@ nav .fas {
   height: 25px;
   background-color: rgb(255, 255, 73);
   width: auto;
+  content: '1';
 }
 
 .upblack {
@@ -78,6 +79,42 @@ nav .fas {
   }
 }
 
-
 /* Top Section */
 
+.sect1-articles {
+  height: 200px;
+  width: auto;
+  margin: 2%;
+}
+
+@media (min-width: 800px) {
+  .sect1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 400px;
+  }
+
+  .sect1-articles {
+    height: 190px;
+  }
+
+  .col1 {
+    grid-row: 1 / 3;
+    height: 380px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sect1 {
+    height: 480px;
+  }
+
+  .sect1-articles {
+    height: 220px;
+  }
+
+  .col1 {
+    height: 440px;
+  }
+}
