@@ -1,76 +1,83 @@
 * {
-    border: 1px red solid;
+  border: 1px red solid;
 }
+
 .logo {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
-    width: 100px;
-    height: 50px;
-    background-size: 100px;
-    background-repeat: no-repeat;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
+  width: 100px;
+  height: 50px;
+  background-size: 100px;
+  background-repeat: no-repeat;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lowwhite {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 nav .fas {
-    font-size: 30px;
-    padding: 9px;
-    border: 1px gray solid;
+  font-size: 30px;
+  padding: 9px;
+  border: 1px gray solid;
 }
 
 .yellow {
-    height: 25px;
-    background-color: rgb(255, 255, 73);
-    width: auto;
+  height: 25px;
+  background-color: rgb(255, 255, 73);
+  width: auto;
 }
 
 .upblack {
-    display: none;
-    background-color: black;
-    height: 32px;
+  display: none;
+  background-color: black;
+  height: 32px;
 }
-
-
 
 @media (min-width: 800px) {
-    .yellow {
-        background-color: rgb(104, 95, 53);
-    }
+  .yellow {
+    background-color: rgb(104, 95, 53);
+  }
 
-    .fa-bars {
-        display: none;
-    }
+  .fa-bars {
+    display: none;
+  }
 
-    nav {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        grid-template-rows: 32px 48px;
-    }
+  nav {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 32px 48px;
+  }
 
-    .upblack {
-        display: block;
-    }
+  .upblack {
+    display: block;
+  }
 
-    .logo {
-        grid-row-start: 1;
-        grid-row-end: span 2;
-        align-self: stretch;
-        height: 82px;
-        background-size: cover;
-    }
-
-    /* .logo {
-        background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
-        width: 100px;
-        height: 50px;
-        background-size: 100px;
-        background-repeat: no-repeat;
-    } */
+  .logo {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    align-self: stretch;
+    height: 82px;
+    background-size: cover;
+  }
 }
+
+@media (min-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 32px 48px;
+  }
+}
+
+
+/* Top Section */
+
