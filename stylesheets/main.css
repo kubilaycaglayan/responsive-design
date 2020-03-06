@@ -3,11 +3,22 @@
 } */
 
 .logo {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 100px;
   height: 50px;
   background-size: 100px;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo:hover {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
+}
+
+.logo svg {
+    width: 66px;
 }
 
 nav {
@@ -42,11 +53,25 @@ nav .fas {
   border: 1px gray solid;
 }
 
+.phase1,
+.phase2,
+.phase3 {
+   margin: 0;
+}
+.phase1 {
+    display: inline;
+}
+.phase2,
+.phase3 {
+    display: none;
+}
+
 .yellow {
   height: 25px;
   background-color: rgb(255, 255, 73);
   width: auto;
   content: '1';
+  text-align: center;
 }
 
 .upblack {
@@ -60,14 +85,16 @@ nav .fas {
 }
 
 @media (min-width: 800px) {
-  .yellow {
-    background-color: rgb(104, 95, 53);
-  }
-
   .fa-bars {
     display: none;
   }
-
+  
+  .phase1 {
+      display: none;
+  }
+  .phase2 {
+      display: inline;
+  }
   nav {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -122,6 +149,13 @@ nav .fas {
     grid-template-columns: 1fr;
     grid-template-rows: 32px 48px;
   }
+  .phase2 {
+    display: none;
+  }   
+  
+  .phase3 {
+    display: inline;
+  }
 }
 
 /* Top Section */
@@ -130,6 +164,12 @@ nav .fas {
   height: 200px;
   width: auto;
   margin: 2%;
+}
+
+.sect1 .col1 {
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/video-background-cut-isolate-unsreen-796x408.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 800px) {
