@@ -1,6 +1,6 @@
-body * {
+/* body * {
   border: 1px red solid;
-}
+} */
 
 .logo {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
@@ -18,10 +18,26 @@ nav {
 
 .lowwhite {
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lowwhite ul {
+  display: none;
+}
+
+.lowwhite li {
+  padding-left: 20px;
+  color: #aaa;
+  font-weight: 500;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 2.5px;
 }
 
 nav .fas {
-  font-size: 30px;
+  font-size: 20px;
   padding: 9px;
   border: 1px gray solid;
 }
@@ -37,6 +53,10 @@ nav .fas {
   display: none;
   background-color: black;
   height: 32px;
+}
+
+.fa-bars {
+  color: #f42;
 }
 
 @media (min-width: 800px) {
@@ -55,7 +75,24 @@ nav .fas {
   }
 
   .upblack {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.623);
+    align-items: center;
+    font-size: 0.8em;
+    padding-right: 2%;
+  }
+
+  .upblack ul {
+    display: flex;
+  }
+
+  .upblack li {
+    padding-left: 10px;
+  }
+
+  .left ul li:nth-child(1) {
+    color: white;
   }
 
   .logo {
@@ -64,6 +101,14 @@ nav .fas {
     align-self: stretch;
     height: 82px;
     background-size: cover;
+  }
+
+  .lowwhite {
+    margin-left: 0;
+  }
+
+  .lowwhite ul {
+    display: flex;
   }
 }
 
@@ -225,77 +270,72 @@ nav .fas {
   }
 }
 
-
 .box3 .bi {
-    height: 325px;
-    background: linear-gradient(to bottom, gray, pink)
-
+  height: 325px;
+  background: linear-gradient(to bottom, gray, pink);
 }
 
 .box3 .bi h3 {
-    position: relative;
-    top: 70%;
+  position: relative;
+  top: 70%;
 }
+
 .box3 h2 {
-    color: #ff4422;
+  color: #f42;
 }
 
 .box3 .reddish {
-    height: 50px;
-    background-color: #f8cfc7;
-    color: #ff4422;
-    font-weight: bolder;
-} 
+  height: 50px;
+  background-color: #f8cfc7;
+  color: #f42;
+  font-weight: bolder;
+}
 
 @media (min-width: 800px) {
-    .box3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 1%;
-    }
-
+  .box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1%;
+  }
 }
 
 @media (min-width: 1024px) {
-    .box3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 1%;
-    }
+  .box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+  }
 }
 
-
-
 footer .btt1 {
-    height: 160px;
-    background: #131313;
-    text-align: center;
-    color: #aaa;
-    padding-top: 2%;
+  height: 160px;
+  background: #131313;
+  text-align: center;
+  color: #aaa;
+  padding-top: 2%;
 }
 
 footer .btt1 i {
-    display: inline;
-    text-align: center;
-    font-size: 30px;
-    margin-left: 1%;
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 1%;
 }
 
 footer .btt2 {
-    background: #000;
-    color: #aaa;
-    height: 97px;
-    text-align: center;
-    padding-top: 1%;
+  background: #000;
+  color: #aaa;
+  height: 97px;
+  text-align: center;
+  padding-top: 1%;
 }
 
 footer .btt2 p {
-    display: block;
-    margin: 0;
+  display: block;
+  margin: 0;
 }
-
 
 /* header,
 .box1,
@@ -304,14 +344,14 @@ footer .btt2 p {
   display: none;
 } */
 
-  @media (min-width: 800px) {
-    footer .btt2 p {
-        display: inline;
-    }
+@media (min-width: 800px) {
+  footer .btt2 p {
+    display: inline;
+  }
 }
 
 @media (min-width: 1024px) {
-    footer .btt2 p {
-        display: inline;
-    }
+  footer .btt2 p {
+    display: inline;
+  }
 }
