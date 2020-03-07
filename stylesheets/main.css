@@ -1,5 +1,7 @@
 body * {
-  /* border: 1px red solid; */
+  border: 1px red solid;
+
+  
 }
 
 main {
@@ -16,7 +18,8 @@ main {
 
 @media (min-width: 1024px) {
   main {
-   margin: 0 auto;
+   
+   
   }
 }
 
@@ -383,6 +386,11 @@ main h2 {
   font-weight: bolder;
   cursor: pointer;
   width: fit-content;
+  margin: 2% 0 0 0;
+}
+
+main h2:hover {
+  color: #131313;
 }
 
 .latestnews {
@@ -402,7 +410,6 @@ main h2 {
 .b1det h3,
 .b1det h4 {
   margin: 0;
-  
 }
 
 .b1det h3 {
@@ -416,11 +423,15 @@ main h2 {
 }
 
 .box1 article img {
-  background-size: cover; 
-  background-position: center;
+  width: 100%;
+  height: 75px;
+  object-fit: cover;
+  
+  /* background-size: cover; 
+  background-position: center; */
 }
-.box1 .ln1 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/aliens-480x270.jpg');
+/* .box1 .ln1 img {
+  background-image: url('');
 }
 .box1 .ln2 img {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/TLOU_Ellie-516x270.jpg');
@@ -441,29 +452,30 @@ main h2 {
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design-46-516x270.png');
 }
 .box1 .ln8 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Wall_Street_-_New_York_Stock_Exchange-480x270.jpg');
-}
+  src: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Wall_Street_-_New_York_Stock_Exchange-480x270.jpg');
+} */
 
 
 @media (min-width: 800px) {
   .box1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 30%);
+    grid-template-rows: repeat(3, min-content);
     gap: 2%;
   }
 
   .box1 article {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: minmax(min-content, max-content);
+    border: 1px blue solid;
   }
 
   .box1 article img {
-   
-    background-size: contain;
-    background-repeat: no-repeat;
-    
+    image-resolution: 300dpi;
+    height: initial;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
   }
 }
 
@@ -472,6 +484,25 @@ main h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
+}
+
+/* BOX 2 */
+
+.box2-header ul li {
+  color: #f42;
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.box2-header ul li:hover {
+  color: #131313;
+} 
+
+.box2-header ul {
+  padding: 0;
+  margin: 0;
 }
 
 .box2 article {
@@ -523,6 +554,18 @@ main h2 {
   .box2-header ul {
     display: flex;
   }
+  .box2-header ul li {
+    padding-right: 15px;
+    
+  }
+  .box2-header ul li:nth-child(1)::after {
+    content: "|";
+    margin-left: 15px;
+  }
+  .box2-header ul li:nth-child(2)::after {
+    content: "|";
+    margin-left: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -533,6 +576,25 @@ main h2 {
   .box2-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .box2-header ul {
+    margin: 2% 0 0 0;
+    flex-flow: row-reverse;
+  }
+  .box2-header ul li:nth-child(3)::after {
+    content: "|";
+    margin-left: 15px;
+  }
+  .box2-header ul li:nth-child(2)::after {
+    content: "|";
+    margin-left: 15px;
+  }
+  .box2-header ul li:nth-child(1)::after {
+    content: none;
+  }
+  .box2-header ul li:nth-child(1) {
+    padding-right: 0;
   }
 }
 
