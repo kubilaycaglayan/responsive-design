@@ -1,5 +1,5 @@
 body * {
-  border: 1px red solid;
+  /* border: 1px red solid; */
 
   
 }
@@ -488,6 +488,10 @@ main h2:hover {
 
 /* BOX 2 */
 
+.box2 {
+  margin-top: 2%;
+}
+
 .box2-header ul li {
   color: #f42;
   list-style: none;
@@ -505,47 +509,96 @@ main h2:hover {
   margin: 0;
 }
 
+
 .box2 article {
   height: 246px;
   position: relative;
 }
 
+.box2 article > i {
+  color: rgba(204, 178, 178, 0.856);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 70px;
+  /* display: none; */
+}
+
+
+
 .lf-subdiv1 {
   height: 44px;
-  background-color: rgb(204, 175, 218);
+  background-color: #f42;
+  color: white;
+  font-size: 20px;
+  padding-left: 82px;
+  font-weight: 600;  
+  white-space: nowrap;
+  padding-top: 7px;
 }
 
 .lf-subdiv2 {
   height: 60px;
-  background-color: rgb(231, 213, 240);
+  background: rgba(255,68,34,.08);
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 82px;
+  white-space: nowrap;
+}
+
+.lf-subdiv2 p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: lighter;
+  color: rgb(124, 124, 124);
 }
 
 .lf-subdiv3 {
+  position: relative;
   height: 82px;
-  background-color: rgb(231, 213, 240);
+  background-color: #fffaf8;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-auto-rows: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px;
+}
+
+.lf-subdiv3 i {
+  font-size: 18px;
+  height: 15px;
+  color: #525252;
+  padding-left: 5px
 }
 
 .lf-subdiv4 {
   height: 45px;
-  background-color: rgb(231, 213, 240);
+  background-color: #fffaf8;
+  border-top: 1px rgba(255, 67, 34, 0.294) solid;
+  font-size: 14px;
+  color: #525252;
+  padding-left: 15px;
+  padding-top: 8px;
 }
 
 .lf4 {
   display: none;
 }
 
-.fa-pied-piper-square {
-  position: absolute;
-  top: 14%;
-  left: 2%;
-}
+
 
 @media (min-width: 800px) {
-  .box2-articles {
-    display: flex;
+  .box2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 15px;
+    grid-template-rows: 1fr;
   }
 
-  .box2-articles > * {
+  .box2 > * {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
