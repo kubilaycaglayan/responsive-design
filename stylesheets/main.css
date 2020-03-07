@@ -1,5 +1,5 @@
 body * {
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .logo {
@@ -160,21 +160,21 @@ nav .fas {
 }
 
 /* Top Section */
+.sect1 {
+  margin: 0 8px 0 8px;
+}
 
 .sect1-articles {
   height: 200px;
   width: auto;
-  /* margin: 2%; */
-  
+  margin-bottom: 1%;
 }
 
 .sect1 .col1 {
   background-image: url(https://images5.alphacoders.com/313/313298.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* border: 1px red solid; */
-  /* height: 100%; */
 }
 
 .sect1 .col1 svg {
@@ -184,21 +184,23 @@ nav .fas {
 .sect1-articles .details {
   color: white;
   font-family: 'Teko', sans-serif;
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 30%;
   height: 100px;
   margin-left: 7px;
+  width: 95%;
 }
+
 .sect1-articles h2,
-.sect1-articles h3,
-.sect1-articles h4 {
+.sect1-articles h3 {
   margin: 0;
   padding: 0;
-  /* line-height: 1.5em; */
-  height: 1.3em;
+  line-height: 1.1em;
+  height: 1.1em;
 }
 
 .sect1-articles h2 {
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -206,21 +208,50 @@ nav .fas {
   font-size: 25px;
 }
 
-.sect1-articles h4 {
+.sect1-articles p {
+  margin: 0;
   color: gray;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  height: 1em;
+}
+
+.col2 {
+  position: relative;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed-796x412.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.col2 .coverlayer2 {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.541);
+  background-size: 100%;5
+}
+
+.row2 {
+  position: relative;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 @media (min-width: 800px) {
   .sect1 {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 400px;
-    gap: 1%;
+    gap: 0.6%;
   }
 
   .sect1-articles {
-    /* height: 190px; */
+    margin: 0;
   }
 
   .col1 {
@@ -232,23 +263,55 @@ nav .fas {
     display: none;
   }
 
-  .sect1-articles .details {
-    top: 60%;
+  .col1 .details {
+    top: 50%;
+    width: 60%;
   }
 
+  .col1 h2 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .col1 h3 {
+    font-size: 45px;
+    line-height: 1em;
+  }
+
+  .col1 p {
+    color: gray;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .col2 .details {
+    width: 98%;
+    font-size: 15px;
+    top: 40%;
+  }
+
+  .col2 .details p {
+    font-size: 12px;
+  }
+
+  .col2 .details h3 {
+    line-height: 0.8em;
+  }
+  
 }
 
 @media (min-width: 1024px) {
   .sect1 {
-    height: 480px;
+    /* height: 480px; */
   }
 
   .sect1-articles {
-    height: 220px;
+    height: 100%;
+    margin: 0;
   }
 
   .col1 {
-    height: 440px;
+    height: 100%;
   }
 
   .coverlayer {
@@ -264,16 +327,29 @@ nav .fas {
     display: block;
     position: absolute;
     width: 30%;
-    /* top: 25%; */
     margin: 14px 0 0 14px;
     z-index: 95;
-    /* border: 1px red solid; */
   }
 
-  .sect1-articles .details {
+  .col1 .details {
     position: absolute;
     bottom: 0;
+    width: 65%;
   }
+
+  .col1 h3 {
+    font-size: 70px;
+    line-height: 0.8em;
+  }
+
+  .col2 .details h3 {
+    font-size: 30px;
+    line-height: 0.8em;
+  }
+}
+
+header {
+  margin-bottom: 1%;
 }
 
 /* BODY FIRST */
