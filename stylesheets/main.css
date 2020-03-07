@@ -651,14 +651,22 @@ main h2:hover {
   }
 }
 
-.box3 .bi {
-  height: 325px;
-  background: linear-gradient(to bottom, gray, pink);
+.box3 > * {
+  position: relative;
+  margin-bottom: 6%;
+  
 }
 
+
+
 .box3 .bi h3 {
-  position: relative;
-  top: 70%;
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  color: white;
+  font-weight: bolder;
+  left: 5%;
+  font-size: 20px;
 }
 
 .box3 h2 {
@@ -670,6 +678,22 @@ main h2:hover {
   background-color: #f8cfc7;
   color: #f42;
   font-weight: bolder;
+  padding: 2px 5px 0 15px;
+}
+
+.bi img {
+  width: 100%;
+  filter: grayscale(80%);
+}
+
+.box3 div ul {
+  padding-left: 15px;
+}
+.box3 div ul li {
+ border-bottom: 1px rgb(226, 226, 226) solid;
+
+  color: #131313;
+
 }
 
 @media (min-width: 800px) {
@@ -679,6 +703,11 @@ main h2:hover {
     grid-template-rows: repeat(4, 1fr);
     gap: 1%;
   }
+  .box3 .bi h3 {
+    top: 40%;
+    left: 5%;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -687,6 +716,12 @@ main h2:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1%;
+  }
+
+  .box3 .bi h3 {
+    top: 35%;
+    left: 5%;
+    font-size: 20px;
   }
 }
 
@@ -718,12 +753,7 @@ footer .btt2 p {
   margin: 0;
 }
 
-/* header,
-.box1,
-.box2,
-.box3 {
-  display: none;
-} */
+
 
 @media (min-width: 800px) {
   footer .btt2 p {
@@ -735,4 +765,12 @@ footer .btt2 p {
   footer .btt2 p {
     display: inline;
   }
+}
+
+
+header,
+.box1,
+.box2-header,
+.box2 {
+  display: none;
 }
