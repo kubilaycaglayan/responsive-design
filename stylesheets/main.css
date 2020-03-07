@@ -2,6 +2,25 @@ body * {
   /* border: 1px red solid; */
 }
 
+main {
+  margin: 0 17px 0 17px;
+  max-width: 1152px;
+}
+
+@media (min-width: 800px) {
+  main {
+    margin: 0 auto;
+   }
+ 
+}
+
+@media (min-width: 1024px) {
+  main {
+   margin: 0 auto;
+  }
+}
+
+
 .logo {
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 100px;
@@ -341,6 +360,10 @@ nav .fas {
     font-size: 70px;
     line-height: 0.8em;
   }
+  .col1 p {
+    position: relative;
+    top: -15px;
+  }
 
   .col2 .details h3 {
     font-size: 30px;
@@ -354,38 +377,93 @@ header {
 
 /* BODY FIRST */
 
+main h2 {
+  color: #FF4422;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  width: fit-content;
+}
+
 .latestnews {
-  height: 72px;
+  height: 75px;
+  margin: 8px 0 8px 0;
 }
 
 .box1 article {
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 75px;
   grid-template-columns: 75px 1fr;
-  margin-bottom: 3%;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.b1det h3,
+.b1det h4 {
+  margin: 0;
+  
+}
+
+.b1det h3 {
+  font-size: 15px;
+}
+
+.b1det h4 {
+  font-size: 12px;
+  color: gray;
+  font-weight: lighter;
 }
 
 .box1 article img {
-  grid-row-end: span 2;
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/1-8-516x270.jpg');
+  background-size: cover; 
+  background-position: center;
 }
+.box1 .ln1 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/aliens-480x270.jpg');
+}
+.box1 .ln2 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/TLOU_Ellie-516x270.jpg');
+}
+.box1 .ln3 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/deepfakedetector-540x268.jpg');
+}
+.box1 .ln4 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-527x270.png');
+}
+.box1 .ln5 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-478x270.jpg');
+}
+.box1 .ln6 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/11/pc-gaming-540x270.jpg');
+}
+.box1 .ln7 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design-46-516x270.png');
+}
+.box1 .ln8 img {
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Wall_Street_-_New_York_Stock_Exchange-480x270.jpg');
+}
+
 
 @media (min-width: 800px) {
   .box1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30%);
     gap: 2%;
   }
 
   .box1 article {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
   }
 
   .box1 article img {
+   
+    background-size: contain;
     background-repeat: no-repeat;
+    
   }
 }
 
