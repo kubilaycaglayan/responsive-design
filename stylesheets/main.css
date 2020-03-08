@@ -214,6 +214,12 @@ nav .fas {
   padding-left: 5px;
 }
 
+.details p {
+  position: relative;
+  top: 15px;
+  font-size: 10px;
+}
+
 .sect1-articles .details {
   color: white;
   font-family: 'Teko', sans-serif;
@@ -299,6 +305,16 @@ nav .fas {
     width: 90%;
   }
 
+  .col1 p {
+    color: gray;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .col1 .details p {
+    top: 45px;
+  }
+
   .col1 h2 {
     font-size: 20px;
     font-weight: lighter;
@@ -307,12 +323,6 @@ nav .fas {
   .col1 h3 {
     font-size: 45px;
     line-height: 1em;
-  }
-
-  .col1 p {
-    color: gray;
-    font-size: 18px;
-    font-weight: lighter;
   }
 
   .col2 .details {
@@ -341,7 +351,6 @@ nav .fas {
   }
 
   .coverlayer {
-    /* border: 1px red solid; */
     width: 100%;
     height: 100%;
     background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
@@ -421,35 +430,7 @@ main h2:hover {
   width: 100%;
   height: 75px;
   object-fit: cover;
-
-  /* background-size: cover;
-  background-position: center; */
 }
-
-/* .box1 .ln1 img {
-  background-image: url('');
-}
-.box1 .ln2 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/TLOU_Ellie-516x270.jpg');
-}
-.box1 .ln3 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/deepfakedetector-540x268.jpg');
-}
-.box1 .ln4 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Snag_1094152b-527x270.png');
-}
-.box1 .ln5 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-478x270.jpg');
-}
-.box1 .ln6 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/11/pc-gaming-540x270.jpg');
-}
-.box1 .ln7 img {
-  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design-46-516x270.png');
-}
-.box1 .ln8 img {
-  src: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Wall_Street_-_New_York_Stock_Exchange-480x270.jpg');
-} */
 
 @media (min-width: 800px) {
   .box1 {
@@ -463,16 +444,11 @@ main h2:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(min-content, max-content);
-
-    /* border: 1px blue solid; */
   }
 
   .box1 article img {
     image-resolution: 300dpi;
     height: initial;
-
-    /* background-size: contain;
-    background-repeat: no-repeat; */
   }
 }
 
@@ -518,19 +494,17 @@ main h2:hover {
   padding-left: 5px;
 }
 
-.box2 article {
+.box2 > div {
   height: 246px;
   position: relative;
 }
 
-.box2 article > i {
+.box2 > div > i {
   color: rgba(204, 178, 178, 0.856);
   position: absolute;
   top: 5px;
   left: 5px;
   font-size: 70px;
-
-  /* display: none; */
 }
 
 .lf-subdiv1 {
