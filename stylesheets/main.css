@@ -11,7 +11,7 @@ main {
 
 @media (min-width: 800px) {
   main {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
    }
  
 }
@@ -768,9 +768,9 @@ footer .btt2 p {
 }
 
 
-header,
+/* header,
 .box1,
 .box2-header,
 .box2 {
   display: none;
-}
+} */
