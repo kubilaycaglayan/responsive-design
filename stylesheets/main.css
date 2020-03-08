@@ -1,5 +1,5 @@
 body * {
-  border: 1px red solid;
+  /* border: 1px red solid; */
 
   
 }
@@ -469,7 +469,7 @@ main h2:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(min-content, max-content);
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
   }
 
   .box1 article img {
