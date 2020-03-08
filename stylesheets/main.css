@@ -95,6 +95,8 @@ nav .fas {
   content: '1';
   text-align: center;
   margin-bottom: 0.5%;
+  font-size: 10px;
+  padding-top: 3px;
 }
 
 .upblack {
@@ -160,6 +162,10 @@ nav .fas {
   .lowwhite ul {
     display: flex;
   }
+  .yellow {
+    font-size: 15px;
+    padding-top: 1px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -193,24 +199,30 @@ nav .fas {
 }
 
 .sect1 .col1 {
+  position: relative;
   background-image: url(https://images5.alphacoders.com/313/313298.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 2px green solid;
 }
 
 .sect1 .col1 svg {
   display: none;
 }
 
+.details {
+  padding-left: 5px;
+}
+
 .sect1-articles .details {
   color: white;
   font-family: 'Teko', sans-serif;
   position: absolute;
-  top: 30%;
-  height: 100px;
-  margin-left: 7px;
-  width: 95%;
+  border: 1px red solid;
+  bottom: 0;
+  height: 50%;
+  width: 90%;
 }
 
 .sect1-articles h2,
@@ -231,6 +243,7 @@ nav .fas {
 }
 
 .sect1-articles p {
+  position: relative;
   margin: 0;
   color: gray;
   font-size: 18px;
@@ -286,8 +299,8 @@ nav .fas {
   }
 
   .col1 .details {
-    top: 50%;
-    width: 60%;
+    
+    width: 90%;
   }
 
   .col1 h2 {
@@ -354,9 +367,8 @@ nav .fas {
   }
 
   .col1 .details {
-    position: absolute;
-    bottom: 0;
-    width: 65%;
+  
+    width: 90%;
   }
 
   .col1 h3 {
@@ -652,22 +664,81 @@ main h2:hover {
   }
 }
 
+/* BOX 3 */
+
 .box3 > * {
   position: relative;
   margin-bottom: 6%;
   
 }
 
+.bi {
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
 
 
+
+.biimg {
+ 
+  z-index: 1;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+} 
+
+.biimg1{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed-368x276.png);
+}
+.biimg2{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/LOVE-LETTER-TO-OnePlus-Bullets-Wireless-2-368x276.png);
+}
+.biimg3{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/aliens-368x276.jpg);
+}
+.biimg4{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
+}
+.biimg5{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/code-1076536_1920-368x276.jpg);
+}
+.biimg6{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-368x276.jpg);
+}
+.biimg7{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bubble-car-isetta-bmw-microlino-microletta-ev-car-new-announced-368x276.png);
+}
+.biimg8{
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/OnlyFans-Featured-368x276.jpg);
+}
+
+.blacklayer {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) ;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
 .box3 .bi h3 {
   position: absolute;
-  top: 45%;
-  width: 80%;
   color: white;
   font-weight: bolder;
-  left: 5%;
   font-size: 20px;
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  right: 0;
+  z-index: 3;
 }
 
 .box3 h2 {
@@ -682,10 +753,7 @@ main h2:hover {
   padding: 2px 5px 0 15px;
 }
 
-.bi img {
-  width: 100%;
-  filter: grayscale(80%);
-}
+
 
 .box3 div ul {
   padding-left: 15px;
@@ -704,11 +772,7 @@ main h2:hover {
     grid-template-rows: repeat(4, 1fr);
     gap: 1%;
   }
-  .box3 .bi h3 {
-    top: 40%;
-    left: 5%;
-    font-size: 20px;
-  }
+  
 }
 
 @media (min-width: 1024px) {
@@ -719,11 +783,6 @@ main h2:hover {
     gap: 1%;
   }
 
-  .box3 .bi h3 {
-    top: 35%;
-    left: 5%;
-    font-size: 20px;
-  }
 }
 
 footer .btt1 {
