@@ -1,31 +1,25 @@
-body * {
-  /* border: 1px red solid; */
-
-  
-}
-
 main {
   margin: 0 17px 0 17px;
   max-width: 1152px;
 }
 
+main h2 {
+  color: #f42;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  width: fit-content;
+  margin: 2% 0 0 0;
+}
+
 @media (min-width: 800px) {
   main {
     margin: 0 auto 0 auto;
-   }
- 
-}
-
-@media (min-width: 1024px) {
-  main {
-   
-   
   }
 }
 
-
 .logo {
-  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
   width: 100px;
   height: 50px;
   background-size: 100px;
@@ -36,11 +30,11 @@ main {
 }
 
 .logo:hover {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif);
 }
 
 .logo svg {
-    width: 66px;
+  width: 66px;
 }
 
 nav {
@@ -78,14 +72,16 @@ nav .fas {
 .phase1,
 .phase2,
 .phase3 {
-   margin: 0;
+  margin: 0;
 }
+
 .phase1 {
-    display: inline;
+  display: inline;
 }
+
 .phase2,
 .phase3 {
-    display: none;
+  display: none;
 }
 
 .yellow {
@@ -113,13 +109,15 @@ nav .fas {
   .fa-bars {
     display: none;
   }
-  
+
   .phase1 {
-      display: none;
+    display: none;
   }
+
   .phase2 {
-      display: inline;
+    display: inline;
   }
+
   nav {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -162,6 +160,7 @@ nav .fas {
   .lowwhite ul {
     display: flex;
   }
+
   .yellow {
     font-size: 15px;
     padding-top: 1px;
@@ -178,10 +177,11 @@ nav .fas {
     grid-template-columns: 1fr;
     grid-template-rows: 32px 48px;
   }
+
   .phase2 {
     display: none;
-  }   
-  
+  }
+
   .phase3 {
     display: inline;
   }
@@ -204,7 +204,6 @@ nav .fas {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px green solid;
 }
 
 .sect1 .col1 svg {
@@ -219,7 +218,6 @@ nav .fas {
   color: white;
   font-family: 'Teko', sans-serif;
   position: absolute;
-  border: 1px red solid;
   bottom: 0;
   height: 50%;
   width: 90%;
@@ -264,7 +262,7 @@ nav .fas {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.541);
-  background-size: 100%;5
+  background-size: 100%;
 }
 
 .row2 {
@@ -273,7 +271,6 @@ nav .fas {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 @media (min-width: 800px) {
@@ -299,7 +296,6 @@ nav .fas {
   }
 
   .col1 .details {
-    
     width: 90%;
   }
 
@@ -332,14 +328,9 @@ nav .fas {
   .col2 .details h3 {
     line-height: 0.8em;
   }
-  
 }
 
 @media (min-width: 1024px) {
-  .sect1 {
-    /* height: 480px; */
-  }
-
   .sect1-articles {
     height: 100%;
     margin: 0;
@@ -357,7 +348,7 @@ nav .fas {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  
+
   .sect1 .col1 svg {
     display: block;
     position: absolute;
@@ -367,7 +358,6 @@ nav .fas {
   }
 
   .col1 .details {
-  
     width: 90%;
   }
 
@@ -375,6 +365,7 @@ nav .fas {
     font-size: 70px;
     line-height: 0.8em;
   }
+
   .col1 p {
     position: relative;
     top: -15px;
@@ -391,15 +382,6 @@ header {
 }
 
 /* BODY FIRST */
-
-main h2 {
-  color: #FF4422;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  cursor: pointer;
-  width: fit-content;
-  margin: 2% 0 0 0;
-}
 
 main h2:hover {
   color: #131313;
@@ -439,10 +421,11 @@ main h2:hover {
   width: 100%;
   height: 75px;
   object-fit: cover;
-  
-  /* background-size: cover; 
+
+  /* background-size: cover;
   background-position: center; */
 }
+
 /* .box1 .ln1 img {
   background-image: url('');
 }
@@ -468,7 +451,6 @@ main h2:hover {
   src: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Wall_Street_-_New_York_Stock_Exchange-480x270.jpg');
 } */
 
-
 @media (min-width: 800px) {
   .box1 {
     display: grid;
@@ -481,12 +463,14 @@ main h2:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(min-content, max-content);
+
     /* border: 1px blue solid; */
   }
 
   .box1 article img {
     image-resolution: 300dpi;
     height: initial;
+
     /* background-size: contain;
     background-repeat: no-repeat; */
   }
@@ -513,15 +497,26 @@ main h2:hover {
   cursor: pointer;
 }
 
+.box3 div ul li {
+  border-bottom: 1px rgb(226, 226, 226) solid;
+  color: #131313;
+}
+
 .box2-header ul li:hover {
   color: #131313;
-} 
+}
 
 .box2-header ul {
   padding: 0;
   margin: 0;
 }
 
+.lf-subdiv3 i {
+  font-size: 18px;
+  height: 15px;
+  color: #525252;
+  padding-left: 5px;
+}
 
 .box2 article {
   height: 246px;
@@ -534,10 +529,9 @@ main h2:hover {
   top: 5px;
   left: 5px;
   font-size: 70px;
+
   /* display: none; */
 }
-
-
 
 .lf-subdiv1 {
   height: 44px;
@@ -545,14 +539,14 @@ main h2:hover {
   color: white;
   font-size: 20px;
   padding-left: 82px;
-  font-weight: 600;  
+  font-weight: 600;
   white-space: nowrap;
   padding-top: 7px;
 }
 
 .lf-subdiv2 {
   height: 60px;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   font-size: 20px;
   font-weight: bold;
   padding-left: 82px;
@@ -580,13 +574,6 @@ main h2:hover {
   padding: 10px;
 }
 
-.lf-subdiv3 i {
-  font-size: 18px;
-  height: 15px;
-  color: #525252;
-  padding-left: 5px
-}
-
 .lf-subdiv4 {
   height: 45px;
   background-color: #fffaf8;
@@ -600,8 +587,6 @@ main h2:hover {
 .lf4 {
   display: none;
 }
-
-
 
 @media (min-width: 800px) {
   .box2 {
@@ -620,14 +605,16 @@ main h2:hover {
   .box2-header ul {
     display: flex;
   }
+
   .box2-header ul li {
     padding-right: 15px;
-    
   }
+
   .box2-header ul li:nth-child(1)::after {
     content: "|";
     margin-left: 15px;
   }
+
   .box2-header ul li:nth-child(2)::after {
     content: "|";
     margin-left: 15px;
@@ -644,21 +631,26 @@ main h2:hover {
     justify-content: space-between;
     align-items: center;
   }
+
   .box2-header ul {
     margin: 2% 0 0 0;
     flex-flow: row-reverse;
   }
+
   .box2-header ul li:nth-child(3)::after {
     content: "|";
     margin-left: 15px;
   }
+
   .box2-header ul li:nth-child(2)::after {
     content: "|";
     margin-left: 15px;
   }
+
   .box2-header ul li:nth-child(1)::after {
     content: none;
   }
+
   .box2-header ul li:nth-child(1) {
     padding-right: 0;
   }
@@ -669,7 +661,6 @@ main h2:hover {
 .box3 > * {
   position: relative;
   margin-bottom: 6%;
-  
 }
 
 .bi {
@@ -679,10 +670,7 @@ main h2:hover {
   width: 100%;
 }
 
-
-
 .biimg {
- 
   z-index: 1;
   background-color: #000;
   background-size: cover;
@@ -692,35 +680,42 @@ main h2:hover {
   position: absolute;
   top: 0;
   right: 0;
-} 
+}
 
-.biimg1{
+.biimg1 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed-368x276.png);
 }
-.biimg2{
+
+.biimg2 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/LOVE-LETTER-TO-OnePlus-Bullets-Wireless-2-368x276.png);
 }
-.biimg3{
+
+.biimg3 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/aliens-368x276.jpg);
 }
-.biimg4{
+
+.biimg4 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg);
 }
-.biimg5{
+
+.biimg5 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/code-1076536_1920-368x276.jpg);
 }
-.biimg6{
+
+.biimg6 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/belching-black-hole-368x276.jpg);
 }
-.biimg7{
+
+.biimg7 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/bubble-car-isetta-bmw-microlino-microletta-ev-car-new-announced-368x276.png);
 }
-.biimg8{
+
+.biimg8 {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/OnlyFans-Featured-368x276.jpg);
 }
 
 .blacklayer {
-  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) ;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
   background-size: 100% 100%;
   bottom: 0;
   left: 0;
@@ -729,6 +724,7 @@ main h2:hover {
   right: 0;
   z-index: 2;
 }
+
 .box3 .bi h3 {
   position: absolute;
   color: white;
@@ -741,10 +737,6 @@ main h2:hover {
   z-index: 3;
 }
 
-.box3 h2 {
-  color: #f42;
-}
-
 .box3 .reddish {
   height: 50px;
   background-color: #f8cfc7;
@@ -753,16 +745,8 @@ main h2:hover {
   padding: 2px 5px 0 15px;
 }
 
-
-
 .box3 div ul {
   padding-left: 15px;
-}
-.box3 div ul li {
- border-bottom: 1px rgb(226, 226, 226) solid;
-
-  color: #131313;
-
 }
 
 @media (min-width: 800px) {
@@ -772,7 +756,6 @@ main h2:hover {
     grid-template-rows: repeat(4, 1fr);
     gap: 1%;
   }
-  
 }
 
 @media (min-width: 1024px) {
@@ -782,7 +765,6 @@ main h2:hover {
     grid-template-rows: repeat(3, 1fr);
     gap: 1%;
   }
-
 }
 
 footer .btt1 {
@@ -817,14 +799,17 @@ footer .btt2 p {
 .righted {
   font-size: 14px;
 }
+
 .box4header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .storybox {
   margin-bottom: 3%;
 }
+
 .story a {
   background-color: #000;
   background-position: 50%;
@@ -833,7 +818,7 @@ footer .btt2 p {
   display: block;
   height: 0;
   overflow: hidden;
-  padding-top: 75%;
+  padding-top: 100%;
   width: 100%;
   margin-bottom: 0;
   position: relative;
@@ -846,27 +831,33 @@ footer .btt2 p {
 .ancimage2 {
   background-image: url(https://cdnp3.stackassets.com/ca8ac4cd8e0107c4584d451a1fb0ac0e5ebe6151/store/be0f2ee1b78c4393e1053fa6de7e735a05a2c49710da62971b1193c1a649/sale_26370_primary_image.jpg);
 }
+
 .ancimage3 {
   background-image: url(https://cdnp1.stackassets.com/4877419c5210a138309370ee75cc76f1b948bb5e/store/9b289361df25a17bb05f05f17ff941efe4c16e642b95dbc007277b0c05ad/sale_26449_primary_image.jpg);
 }
+
 .ancimage4 {
   background-image: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
 }
+
 .ancimage5 {
   background-image: url(https://cdnp2.stackassets.com/3c13f10f74c095314df532568d210203f3df5b63/store/26e4fdf4bbbb46a77c2163f35ddbfa2a6034e4e6a4cefd42aceebb6375a0/sale_26324_primary_image.jpg);
 }
+
 .ancimage6 {
   background-image: url(https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg);
 }
+
 .ancimage7 {
   background-image: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg);
 }
+
 .ancimage8 {
   background-image: url(https://cdnp1.stackassets.com/c80121459c194c189c69893dd70ede917733b848/store/ee611f43e23784d3d04caca02f49f80efac26b80672f17d376d7ef461c6c/sale_26368_primary_image.jpg);
 }
 
 .ribbon {
- display: none;
+  display: none;
 }
 
 .story h4 {
@@ -879,19 +870,16 @@ footer .btt2 p {
   line-height: 1em;
   padding: 0;
   margin: 5px 0 0 0;
-  color: #131313;
-  font-size: 20px;
+  color: #424242;
+  font-size: 15px;
 }
 
 .story h5 span {
   text-decoration: line-through;
   font-size: small;
   color: #aaa;
-  padding-right: 15px;
+  padding-right: 12px;
 }
-
-
-
 
 @media (min-width: 800px) {
   .ribbon {
@@ -921,18 +909,54 @@ footer .btt2 p {
     top: 20px;
     width: 100%;
   }
+
+  .story a {
+    padding-top: 75%;
+  }
+
+  .story h5 {
+    font-size: 18px;
+  }
+
+  .story h5 span {
+    padding-right: 15px;
+  }
 }
 
-@media (min-width: 1024px) {
- 
+.logocircle {
+  display: inline-flex;
+  border: 1px rgb(98, 98, 98) solid;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(98, 98, 98);
+  margin-right: 5px;
 }
 
+.logocircle:hover {
+  background-color: initial;
+}
 
+.logocircle .fab,
+.logocircle .fas {
+  font-size: 15px;
+  color: rgb(253, 253, 253);
+}
 
+.btt1 p a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666;
+  margin-right: 5px;
+  font-size: 12px;
+}
 
-
-
-
+.btt1 p a:hover {
+  color: white;
+}
 
 @media (min-width: 800px) {
   footer .btt2 p {
@@ -945,11 +969,3 @@ footer .btt2 p {
     display: inline;
   }
 }
-
-
-/* header,
-.box1,
-.box2-header,
-.box2 {
-  display: none;
-} */
