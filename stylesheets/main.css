@@ -1,5 +1,5 @@
 body * {
-  /* border: 1px red solid; */
+  border: 1px red solid;
 
   
 }
@@ -396,6 +396,7 @@ main h2:hover {
 .latestnews {
   height: 75px;
   margin: 8px 0 8px 0;
+  position: relative;
 }
 
 .box1 article {
@@ -752,6 +753,125 @@ footer .btt2 p {
   display: block;
   margin: 0;
 }
+
+/* BOX 4 */
+.righted {
+  font-size: 14px;
+}
+.box4header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.storybox {
+  margin-bottom: 3%;
+}
+.story a {
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 75%;
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.ancimage1 {
+  background-image: url(https://cdnp1.stackassets.com/d70d575440dc2303f6c0f578f6546cc872eb2b6b/store/bc8a1c7c761aaedca8d2eb395cf9fccb9e15aadd0d764277c827cda8ada8/sale_26801_primary_image.jpg);
+}
+
+.ancimage2 {
+  background-image: url(https://cdnp3.stackassets.com/ca8ac4cd8e0107c4584d451a1fb0ac0e5ebe6151/store/be0f2ee1b78c4393e1053fa6de7e735a05a2c49710da62971b1193c1a649/sale_26370_primary_image.jpg);
+}
+.ancimage3 {
+  background-image: url(https://cdnp1.stackassets.com/4877419c5210a138309370ee75cc76f1b948bb5e/store/9b289361df25a17bb05f05f17ff941efe4c16e642b95dbc007277b0c05ad/sale_26449_primary_image.jpg);
+}
+.ancimage4 {
+  background-image: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
+}
+.ancimage5 {
+  background-image: url(https://cdnp2.stackassets.com/3c13f10f74c095314df532568d210203f3df5b63/store/26e4fdf4bbbb46a77c2163f35ddbfa2a6034e4e6a4cefd42aceebb6375a0/sale_26324_primary_image.jpg);
+}
+.ancimage6 {
+  background-image: url(https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg);
+}
+.ancimage7 {
+  background-image: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg);
+}
+.ancimage8 {
+  background-image: url(https://cdnp1.stackassets.com/c80121459c194c189c69893dd70ede917733b848/store/ee611f43e23784d3d04caca02f49f80efac26b80672f17d376d7ef461c6c/sale_26368_primary_image.jpg);
+}
+
+.ribbon {
+ display: none;
+}
+
+.story h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.story h5 {
+  height: min-content;
+  line-height: 1em;
+  padding: 0;
+  margin: 5px 0 0 0;
+  color: #131313;
+  font-size: 20px;
+}
+
+.story h5 span {
+  text-decoration: line-through;
+  font-size: small;
+  color: #aaa;
+  padding-right: 15px;
+}
+
+
+
+
+@media (min-width: 800px) {
+  .ribbon {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+  }
+
+  .ribtitle {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: bolder;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+ 
+}
+
+
+
+
+
 
 
 
