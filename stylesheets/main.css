@@ -154,7 +154,8 @@ nav .fas {
 
 @media (min-width: 800px) {
   nav {
-    position: relative;
+    position: sticky;
+    top: -32px;
   }
 
   .fa-bars {
@@ -210,11 +211,6 @@ nav .fas {
     width: 380px;
   }
 
-  .lowwhite {
-    position: sticky;
-    top: 0;
-  }
-
   .logo:hover {
     background-size: cover;
   }
@@ -234,7 +230,6 @@ nav .fas {
   }
 }
 
-/* Top Section */
 .sect1 {
   margin: 0 8px 0 8px;
   padding-top: 95px;
@@ -444,8 +439,6 @@ header {
   margin-bottom: 1%;
 }
 
-/* BODY FIRST */
-
 main h2:hover {
   color: #131313;
 }
@@ -512,8 +505,6 @@ main h2:hover {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-
-/* BOX 2 */
 
 .box2 {
   margin-top: 2%;
@@ -626,12 +617,12 @@ main h2:hover {
   }
 
   .box2-header ul li:nth-child(1)::after {
-    content: "|";
+    content: '|';
     margin-left: 15px;
   }
 
   .box2-header ul li:nth-child(2)::after {
-    content: "|";
+    content: '|';
     margin-left: 15px;
   }
 }
@@ -653,12 +644,12 @@ main h2:hover {
   }
 
   .box2-header ul li:nth-child(3)::after {
-    content: "|";
+    content: '|';
     margin-left: 15px;
   }
 
   .box2-header ul li:nth-child(2)::after {
-    content: "|";
+    content: '|';
     margin-left: 15px;
   }
 
@@ -670,8 +661,6 @@ main h2:hover {
     padding-right: 0;
   }
 }
-
-/* BOX 3 */
 
 .box3 > * {
   position: relative;
@@ -730,7 +719,9 @@ main h2:hover {
 }
 
 .blacklayer {
-  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
+  background:
+    transparent
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png);
   background-size: 100% 100%;
   bottom: 0;
   left: 0;
@@ -810,7 +801,6 @@ footer .btt2 p {
   margin: 0;
 }
 
-/* BOX 4 */
 .righted {
   font-size: 14px;
 }
