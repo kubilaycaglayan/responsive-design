@@ -66,6 +66,11 @@ nav ul li {
   color: rgb(167, 167, 167);
 }
 
+.rightlist li {
+  border-left: 1px rgb(231, 231, 231) solid;
+  border-right: 1px rgb(231, 231, 231) solid;
+}
+
 .box2-header ul li {
   color: #f42;
   list-style: none;
@@ -97,8 +102,8 @@ nav ul li:hover {
 
 nav .fas {
   font-size: 20px;
-  padding: 15px;
-  border: 1px rgb(231, 231, 231) solid;
+  padding: 14.5px;
+  letter-spacing: initial;
 }
 
 .phase1,
