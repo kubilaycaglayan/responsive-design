@@ -173,6 +173,9 @@ nav .fas {
     position: sticky;
     top: 0;
   }
+  .logo:hover {
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
