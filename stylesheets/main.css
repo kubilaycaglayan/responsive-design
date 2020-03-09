@@ -63,11 +63,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 13px;
+  font-size: 18px;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .hidemobile {
   display: none;
+}
+
+nav ul li {
+  color: rgb(167, 167, 167);
+}
+.upblack ul li:nth-child(1) {
+  color: white;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+
+.lowwhite ul li:hover {
+  color: black;
+}
+
+.upblack ul li:hover {
+  color: white;
 }
 
 nav .fas {
@@ -108,7 +128,8 @@ nav .fas {
 }
 
 .upblack ul {
-  font-size: 12px;
+  font-size: 14px;
+  font-family: sans-serif;
 }
 
 .fa-bars {
@@ -136,7 +157,7 @@ nav .fas {
   .yellow {
     height: 32px;
   }
-
+  
   .upblack ul {
     display: flex;
     color: white;
@@ -188,7 +209,6 @@ nav .fas {
   .upblack {
     margin-left: 0;
   }
-  
 }
 
 /* Top Section */
