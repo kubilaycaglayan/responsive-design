@@ -6,6 +6,8 @@
 
 > Cloning https://thenextweb.com/ website according to the responsive design rules.
 
+![Screenshot_2020-03-09 TNW Responsive(3)](https://user-images.githubusercontent.com/60448833/76197366-0f53ed00-61fd-11ea-8a0c-f154960b0e57.jpg)
+
 Additional description about the project and its features.
 
 ## Built With
@@ -15,7 +17,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/kblycaglayan/Building-with-Responsive-Design/2d41a5bcec5d4f0b1fa74c7443e4317f5a905f93/index.html)
 
 ## Getting Started
 
